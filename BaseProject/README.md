@@ -292,3 +292,13 @@ LeftMenu
 
 
 
+
+#### 命名规范
+1. AppIcon命名
+```
+AppIcon_appstore_1024pt
+AppIcon_iphone_app_60pt
+AppIcon_iphone_notification_20pt
+AppIcon_iphone_settings_29pt
+AppIcon_iphone_spotlight_40pt
+```
