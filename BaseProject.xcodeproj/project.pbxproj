@@ -695,6 +695,15 @@
 			path = BaseProjectUITests;
 			sourceTree = "<group>";
 		};
+		5394398C24F8B31C0097DCAA /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				53A6F12F24E0FA2E00E8C9B4 /* CashPay */,
+				53A6F1AD24E0FA2F00E8C9B4 /* PayUtil */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
 		53A6F12C24E0FA2E00E8C9B4 /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
@@ -722,7 +731,7 @@
 		53A6F12E24E0FA2E00E8C9B4 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				53A6F12F24E0FA2E00E8C9B4 /* CashPay */,
+				5394398C24F8B31C0097DCAA /* Pay */,
 				53A6F13224E0FA2E00E8C9B4 /* DataBase */,
 				53A6F14B24E0FA2E00E8C9B4 /* AreaSelect */,
 				53A6F15724E0FA2E00E8C9B4 /* Extension */,
@@ -737,7 +746,6 @@
 				53A6F1A424E0FA2E00E8C9B4 /* Project */,
 				53A6F1A824E0FA2F00E8C9B4 /* XDNestView */,
 				53A6F1AB24E0FA2F00E8C9B4 /* Constant */,
-				53A6F1AD24E0FA2F00E8C9B4 /* PayUtil */,
 				53A6F1B024E0FA2F00E8C9B4 /* PickerUtil */,
 				53A6F1B524E0FA2F00E8C9B4 /* PhoneUtil */,
 				53A6F1B724E0FA2F00E8C9B4 /* XiaoDeKit */,
