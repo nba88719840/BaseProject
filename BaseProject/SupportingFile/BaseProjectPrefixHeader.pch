@@ -17,7 +17,6 @@
 //#import <ChainOneKit/ChainOneKit-Swift.h>
 //#import <SnapKit/SnapKit-Swift.h>
 #import <UIKit/UIKit.h>
-#import <Hyphenate/Hyphenate.h>
 #import <Masonry/Masonry.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 #import "UIImageView+WebCache.h"
