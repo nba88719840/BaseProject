@@ -83,8 +83,8 @@ extension LaunchController {
             if AppConfig.share.showTest {
                 self.enterTestPage()
             } else {
-//                self.gotoNextPage(isFirst: isFirst)
-                RootManager.share.type = .advert
+                self.gotoNextPage(isFirst: isFirst)
+                //RootManager.share.type = .advert
             }
             if isFirst {
                 VersionManager.share.updateSavedVersion()

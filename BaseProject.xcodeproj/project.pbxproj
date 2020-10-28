@@ -1835,7 +1835,7 @@
 		53A6F2A724E0FA3100E8C9B4 /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				53A6F2A924E0FA3100E8C9B4 /* ChildController */,
+				53A6F2A924E0FA3100E8C9B4 /* MainChild */,
 				53A6F2A824E0FA3100E8C9B4 /* MainTabBarController+Extension.swift */,
 				53A6F2AF24E0FA3100E8C9B4 /* MainTabBarController.swift */,
 				53A6F2B024E0FA3100E8C9B4 /* TabbarItemModel.swift */,
@@ -1843,7 +1843,7 @@
 			path = MainTabBar;
 			sourceTree = "<group>";
 		};
-		53A6F2A924E0FA3100E8C9B4 /* ChildController */ = {
+		53A6F2A924E0FA3100E8C9B4 /* MainChild */ = {
 			isa = PBXGroup;
 			children = (
 				53A6F2AA24E0FA3100E8C9B4 /* ThirdHomeController.swift */,
@@ -1852,7 +1852,7 @@
 				53A6F2AD24E0FA3100E8C9B4 /* FourthHomeController.swift */,
 				53A6F2AE24E0FA3100E8C9B4 /* SecondHomeController.swift */,
 			);
-			path = ChildController;
+			path = MainChild;
 			sourceTree = "<group>";
 		};
 		53A6F2B124E0FA3100E8C9B4 /* Library */ = {

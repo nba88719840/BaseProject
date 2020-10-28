@@ -40,10 +40,10 @@ class RootViewController: BaseViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        // 第一次显示，获取系统配置，若失败，则显示系统配置失败界面
-        if 1 == self.didAppearTime {
-            self.getSystemConfig()
-        }
+//        // 第一次显示，获取系统配置，若失败，则显示系统配置失败界面
+//        if 1 == self.didAppearTime {
+//            self.getSystemConfig()
+//        }
     }
     
     

@@ -9,6 +9,7 @@
 
 import Foundation
 
+typealias AppNotification = Notification.Name
 typealias AppNotificationName = Notification.Name
 extension Notification.Name {
 
@@ -65,7 +66,11 @@ extension Notification.Name {
     }
 
     /// 广告
-    static let AdvertClick = NSNotification.Name(rawValue: "app.notification.name.advert.click")
+    struct Advert {
+        static let click = NSNotification.Name(rawValue: "app.notification.name.advert.click")
+    }
+    
+    
 
     /// 用户
     struct User {

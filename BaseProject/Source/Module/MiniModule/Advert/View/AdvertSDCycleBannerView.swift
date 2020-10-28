@@ -127,6 +127,6 @@ extension AdvertSDCycleBannerView: SDCycleScrollViewDelegate {
         //self.delegate?.advertBanner(self, didSelected: models[index], at: index)
         //self.advertSelectedAction?(self, models[index], index)
         let model = models[index]
-        NotificationCenter.default.post(name: Notification.Name.AdvertClick, object: model, userInfo: nil)
+        NotificationCenter.default.post(name: Notification.Name.Advert.click, object: model, userInfo: nil)
     }
 }

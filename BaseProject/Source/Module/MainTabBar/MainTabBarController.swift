@@ -15,7 +15,8 @@ class MainTabBarController: UITabBarController {
     // MARK: - Private Property
     fileprivate var items: [TabbarItemModel] = []
 
-    fileprivate var lastDate = Date.init()
+    /// 记录tabbar上次点击时间，用于处理双击(快速点击)TabbarItem的依据
+    fileprivate var itemClickLastDate = Date.init()
 
 
     // MARK: - Initialize Function
@@ -49,11 +50,10 @@ extension MainTabBarController {
         VersionManager.share.updateProcess()        // 版本更新判断
         AppUtil.updateRealNameCert()              // 实名认证状态更新
         AppUtil.updateUserTotalCT()               // CT数更新
-        /// 广告
-//        NotificationCenter.default.addObserver(self, selector: #selector(advertClickNotificationProcess(_:)), name: NSNotification.Name.AdvertClick, object: nil)
-        // 网络环境配置
-//        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChangedNotificationProcess(_:)), name: NSNotification.Name.imeet.reachabilityChanged, object: nil)
 
+        /// 通知响应添加，采用统一入口
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationProcess(_:)), name: AppNotification.Advert.click, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationProcess(_:)), name: AppNotification.NetWork.reachabilityChanged, object: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -73,6 +73,7 @@ extension MainTabBarController {
     fileprivate func initialUI() -> Void {
         self.view.backgroundColor = UIColor.white
     }
+
 }
 
 // MARK: - Data(数据处理与加载)
@@ -131,31 +132,6 @@ extension MainTabBarController {
 
 }
 
-extension MainTabBarController {
-    fileprivate func enterAdWebPage(link: String) -> Void {
-        let webVC = XDWKWebViewController.init(type: XDWebViwSourceType.strUrl(strUrl: link))
-        if let selectedNC = self.selectedViewController as? UINavigationController {
-            selectedNC.pushViewController(webVC, animated: true)
-        }
-    }
-
-}
-// MARK: - Notification
-extension MainTabBarController {
-
-    /// 通知统一入口，将子通知放到专门的Extension文件中去处理
-    @objc fileprivate func notificationProcess(_ notification: Notification) -> Void {
-        switch notification.name {
-        case NSNotification.Name.AdvertClick:
-            break
-        case NSNotification.Name.app.reachabilityChanged:
-            break
-        default:
-            break
-        }
-    }
-
-}
 
 // MARK: - Extension Function
 extension MainTabBarController {
@@ -179,6 +155,7 @@ extension MainTabBarController {
         childVC.tabBarItem.selectedImage = selectedImage?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
         childVC.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -5)
     }
+
 }
 
 // MARK: - ShowAlert
@@ -209,6 +186,16 @@ extension MainTabBarController: UITabBarControllerDelegate {
 
 // MARK: - Timer & Looping
 extension MainTabBarController {
+
+}
+
+// MARK: - extension
+extension MainTabBarController {
+    /// 双击tabbar滚动
+    func doubleSelectTabbar() {
+        //发送双击tabbar通知
+        NotificationCenter.default.post(name: NSNotification.Name.Tabbar.doubleTap, object: nil, userInfo: nil)
+    }
 
 }
 

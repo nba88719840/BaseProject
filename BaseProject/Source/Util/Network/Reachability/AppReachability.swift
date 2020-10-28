@@ -11,7 +11,7 @@ import Foundation
 import Reachability
 
 extension Notification.Name {
-    struct app {
+    struct NetWork {
         /// 网络状态变更
         static let reachabilityChanged = Notification.Name.init("app.notification.name.imeet.reachabilityChanged")
     }
@@ -99,7 +99,7 @@ class AppReachability {
         case .none:
             print("Network not reachable")
         }
-        NotificationCenter.default.post(name: NSNotification.Name.app.reachabilityChanged, object: self.currentConn, userInfo: nil)
+        NotificationCenter.default.post(name: NSNotification.Name.NetWork.reachabilityChanged, object: self.currentConn, userInfo: nil)
     }
 
 }

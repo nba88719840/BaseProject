@@ -30,6 +30,7 @@ struct TabbarItemModel {
         self.childVC = childVC
     }
 
+    ///
     // init(title: String, normalImageName: String, selectedImageName: String, childVCName: String)
 
 }

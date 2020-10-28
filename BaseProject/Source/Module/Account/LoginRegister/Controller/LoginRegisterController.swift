@@ -62,7 +62,7 @@ extension LoginRegisterController {
         self.initialUI()
         self.initialDataSource()
         // 网络检测
-        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChangedNotificationProcess(_:)), name: NSNotification.Name.app.reachabilityChanged, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChangedNotificationProcess(_:)), name: NSNotification.Name.NetWork.reachabilityChanged, object: nil)
         VersionManager.share.updateProcess()    // 版本更新判断
         // 初始数据(配置、广告)再次加载，避免首次问题
         AppUtil.getSystemConfig()              // 应用启动配置(来自服务器)

@@ -5,21 +5,40 @@
 //  Created by 小唐 on 2020/8/10.
 //  Copyright © 2020 ChainOne. All rights reserved.
 //
+//  通知扩展
 
 import Foundation
 
-
-// MARK: - extension
+// MARK: - 通知统一入口
+// MARK: - Notification
 extension MainTabBarController {
-    /// 双击tabbar滚动
-    func doubleSelectTabbar() {
-        //发送双击tabbar通知
-        NotificationCenter.default.post(name: NSNotification.Name.Tabbar.doubleTap, object: nil, userInfo: nil)
-    }
+
+
+
 }
 
+extension MainTabBarController {
+    
+//    /// 通知统一处理入口
+//    @objc func notificationProcess(_ notification: Notification) -> Void {
+//
+//    }
+//
+    /// 通知统一入口，将子通知放到专门的Extension文件中去处理
+    @objc func notificationProcess(_ notification: Notification) -> Void {
+        switch notification.name {
+        case NSNotification.Name.Advert.click:
+            break
+        case NSNotification.Name.NetWork.reachabilityChanged:
+            break
+        default:
+            break
+        }
+    }
+    
+}
 
-// MARK: - 
+// MARK: - 具体通知详细处理
 extension MainTabBarController {
     
     /// 网络环境变更通知处理
@@ -119,3 +138,15 @@ extension MainTabBarController {
     }
     
 }
+
+// MARK: - EnterPage
+extension MainTabBarController {
+    fileprivate func enterAdWebPage(link: String) -> Void {
+        let webVC = XDWKWebViewController.init(type: XDWebViwSourceType.strUrl(strUrl: link))
+        if let selectedNC = self.selectedViewController as? UINavigationController {
+            selectedNC.pushViewController(webVC, animated: true)
+        }
+    }
+
+}
+
