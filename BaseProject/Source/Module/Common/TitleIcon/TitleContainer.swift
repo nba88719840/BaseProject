@@ -9,15 +9,12 @@
 import UIKit
 
 typealias TitleView = TitleContainer
-class TitleContainer: UIView
+class TitleContainer: BaseView
 {
 
     // MARK: - Internal Property
 
     let label: UILabel = UILabel()
-
-    let bgView: UIImageView = UIImageView.init()
-    let gradientLayer: CAGradientLayer = AppUtil.commonGradientLayer()
     
 
     // MARK: - Private Property
@@ -48,15 +45,6 @@ class TitleContainer: UIView
 extension TitleContainer {
     /// 界面布局
     fileprivate func initialUI() -> Void {
-        // 0. bg
-        self.addSubview(self.bgView)
-        self.bgView.set(cornerRadius: 0)
-        self.bgView.isHidden = true // 默认隐藏
-        self.bgView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-        self.layer.insertSublayer(self.gradientLayer, below: nil)
-        self.layer.isHidden = true  // 默认隐藏
         // 1. label
         self.addSubview(self.label)
         self.label.set(text: nil, font: UIFont.systemFont(ofSize: 14), textColor: UIColor.darkText)

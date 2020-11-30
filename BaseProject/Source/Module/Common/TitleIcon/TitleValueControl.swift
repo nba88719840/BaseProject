@@ -8,16 +8,13 @@
 
 import UIKit
 
-class TitleValueControl: UIControl
+class TitleValueControl: BaseControl
 {
 
     // MARK: - Internal Property
 
     let titleLabel: UILabel = UILabel()
     let valueLabel: UILabel = UILabel()
-
-    let bgView: UIImageView = UIImageView.init()
-    let gradientLayer: CAGradientLayer = AppUtil.commonGradientLayer()
 
 
 
@@ -38,6 +35,7 @@ class TitleValueControl: UIControl
     fileprivate func commonInit() -> Void {
         self.initialUI()
     }
+
 }
 
 // MARK: - Internal Function
@@ -48,15 +46,6 @@ class TitleValueControl: UIControl
 extension TitleValueControl {
     /// 界面布局
     fileprivate func initialUI() -> Void {
-        // 0. bg
-        self.addSubview(self.bgView)
-        self.bgView.set(cornerRadius: 0)
-        self.bgView.isHidden = true // 默认隐藏
-        self.bgView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-        self.layer.insertSublayer(self.gradientLayer, below: nil)
-        self.layer.isHidden = true  // 默认隐藏
         // 1. titleLabel
         self.addSubview(self.titleLabel)
         self.titleLabel.set(text: nil, font: UIFont.systemFont(ofSize: 14), textColor: UIColor.darkText)

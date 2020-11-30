@@ -9,15 +9,12 @@
 
 import UIKit
 
-class IconTitleValueView: UIView
+class IconTitleValueView: BaseView
 {
 
     let iconView: UIImageView = UIImageView()
     let titleLabel: UILabel = UILabel()
     let valueLabel: UILabel = UILabel()
-    
-    let bgView: UIImageView = UIImageView.init()
-    let gradientLayer: CAGradientLayer = AppUtil.commonGradientLayer()
 
     // MARK: - Private Property
 
@@ -36,6 +33,7 @@ class IconTitleValueView: UIView
     fileprivate func commonInit() -> Void {
         self.initialUI()
     }
+
 }
 
 // MARK: - Internal Function
@@ -50,15 +48,6 @@ extension IconTitleValueView {
 extension IconTitleValueView {
     /// 界面布局
     fileprivate func initialUI() -> Void {
-        // 0. bg
-        self.addSubview(self.bgView)
-        self.bgView.set(cornerRadius: 0)
-        self.bgView.isHidden = true // 默认隐藏
-        self.bgView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-        self.layer.insertSublayer(self.gradientLayer, below: nil)
-        self.layer.isHidden = true  // 默认隐藏
         // 1. icon
         self.addSubview(self.iconView)
         self.iconView.set(cornerRadius: 0)

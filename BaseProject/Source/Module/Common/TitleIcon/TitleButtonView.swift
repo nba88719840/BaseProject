@@ -9,16 +9,13 @@
 import UIKit
 
 typealias TitleButtonContainer = TitleButtonView
-class TitleButtonView: UIView
+class TitleButtonView: BaseView
 {
 
     // MARK: - Internal Property
 
     let titleLabel: UILabel = UILabel()
     let button: UIButton = UIButton.init(type: .custom)
-
-    let bgView: UIImageView = UIImageView.init()
-    let gradientLayer: CAGradientLayer = AppUtil.commonGradientLayer()
 
     // MARK: - Private Property
 
@@ -37,6 +34,7 @@ class TitleButtonView: UIView
     func commonInit() -> Void {
         self.initialUI()
     }
+
 }
 
 // MARK: - Internal Function
@@ -50,15 +48,6 @@ extension TitleButtonView {
 extension TitleButtonView {
     /// 界面布局
     fileprivate func initialUI() -> Void {
-        // 0. bg
-        self.addSubview(self.bgView)
-        self.bgView.set(cornerRadius: 0)
-        self.bgView.isHidden = true // 默认隐藏
-        self.bgView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-        self.layer.insertSublayer(self.gradientLayer, below: nil)
-        self.layer.isHidden = true  // 默认隐藏
         // 1. titleLabel
         self.addSubview(self.titleLabel)
         self.titleLabel.set(text: nil, font: UIFont.systemFont(ofSize: 15), textColor: UIColor.lightGray)

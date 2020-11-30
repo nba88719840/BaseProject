@@ -1,22 +1,20 @@
 //
-//  TitleValueView.swift
-//  ChuangYe
+//  IconTitleValueControl.swift
+//  BaseProject
 //
-//  Created by 小唐 on 2020/8/11.
+//  Created by 小唐 on 2020/11/30.
 //  Copyright © 2020 ChainOne. All rights reserved.
 //
+//  左侧：图标+标题，右侧：值
 
 import UIKit
 
-typealias TitleValueContainer = TitleValueView
-class TitleValueView: BaseView
+class IconTitleValueControl: BaseControl
 {
 
-    // MARK: - Internal Property
-
+    let iconView: UIImageView = UIImageView()
     let titleLabel: UILabel = UILabel()
     let valueLabel: UILabel = UILabel()
-
 
     // MARK: - Private Property
 
@@ -40,28 +38,37 @@ class TitleValueView: BaseView
 
 // MARK: - Internal Function
 
+extension IconTitleValueControl {
+
+}
+
 // MARK: - Override Function
 
 // MARK: - Private  UI
-extension TitleValueView {
+extension IconTitleValueControl {
     /// 界面布局
     fileprivate func initialUI() -> Void {
-        // 1. titleLabel
-        self.addSubview(self.titleLabel)
-        self.titleLabel.set(text: nil, font: UIFont.systemFont(ofSize: 14), textColor: UIColor.darkText)
-        self.titleLabel.snp.makeConstraints { (make) in
+        // 1. icon
+        self.addSubview(self.iconView)
+        self.iconView.set(cornerRadius: 0)
+        self.iconView.snp.makeConstraints { (make) in
             make.leading.centerY.equalToSuperview()
             make.top.greaterThanOrEqualToSuperview().offset(0)
             make.bottom.lessThanOrEqualToSuperview().offset(-0)
         }
-        // 2. valueLabel
+        // 2. title
+        self.addSubview(self.titleLabel)
+        self.titleLabel.set(text: nil, font: UIFont.pingFangSCFont(size: 14), textColor: AppColor.mainText)
+        self.titleLabel.snp.makeConstraints { (make) in
+            make.centerY.equalToSuperview()
+            make.left.equalTo(self.iconView.snp.right).offset(8)
+        }
+        // 3. value
         self.addSubview(self.valueLabel)
-        self.valueLabel.set(text: nil, font: UIFont.systemFont(ofSize: 14), textColor: UIColor.lightGray)
+        self.valueLabel.set(text: nil, font: UIFont.pingFangSCFont(size: 16, weight: .medium), textColor: AppColor.mainText)
         self.valueLabel.snp.makeConstraints { (make) in
-            make.leading.equalTo(self.titleLabel.snp.trailing)
-            make.centerY.trailing.equalToSuperview()
-            make.top.greaterThanOrEqualToSuperview().offset(0)
-            make.bottom.lessThanOrEqualToSuperview().offset(-0)
+            make.centerY.equalToSuperview()
+            make.right.equalToSuperview()
         }
     }
 

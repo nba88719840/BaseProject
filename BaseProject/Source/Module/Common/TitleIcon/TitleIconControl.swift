@@ -14,15 +14,12 @@ import UIKit
 /// 图标标题控件
 typealias IconTitleControl = TitleIconControl
 /// 标题图标Control 需自己重新布局和设置
-class TitleIconControl: UIControl {
+class TitleIconControl: BaseControl {
 
     // MARK: - Internal Property
 
     let titleLabel: UILabel = UILabel()
     let iconView: UIImageView = UIImageView()
-
-    let bgView: UIImageView = UIImageView.init()
-    let gradientLayer: CAGradientLayer = AppUtil.commonGradientLayer()
 
 
     // MARK: - Private Property
@@ -60,15 +57,6 @@ extension TitleIconControl {
 extension TitleIconControl {
     /// 界面布局
     fileprivate func initialUI() -> Void {
-        // 0. bg
-        self.addSubview(self.bgView)
-        self.bgView.set(cornerRadius: 0)
-        self.bgView.isHidden = true // 默认隐藏
-        self.bgView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-        self.layer.insertSublayer(self.gradientLayer, below: nil)
-        self.layer.isHidden = true  // 默认隐藏
         // 1. titleLabel
         self.addSubview(self.titleLabel)
         self.titleLabel.set(text: nil, font: UIFont.systemFont(ofSize: 15), textColor: UIColor.lightGray)

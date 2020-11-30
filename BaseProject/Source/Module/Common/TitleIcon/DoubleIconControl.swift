@@ -12,7 +12,7 @@
 import UIKit
 
 /// 双icon的可点击Control，默认横向加载，使用时需自定义布局
-class DoubleIconControl: UIControl {
+class DoubleIconControl: BaseControl {
 
     // MARK: - Internal Property
 
@@ -21,9 +21,6 @@ class DoubleIconControl: UIControl {
     let firstIconView: UIImageView = UIImageView()
     /// icon2，横向就是右边的，竖向就是下面的
     let secondIconView: UIImageView = UIImageView()
-
-    let bgView: UIImageView = UIImageView.init()
-    let gradientLayer: CAGradientLayer = AppUtil.commonGradientLayer()
 
     // MARK: - Private Property
 
@@ -43,6 +40,7 @@ class DoubleIconControl: UIControl {
         self.initialUI()
         self.reLayout()
     }
+
 }
 
 // MARK: - Internal Function
@@ -52,6 +50,7 @@ extension DoubleIconControl {
     func reLayout() -> Void {
 
     }
+
 }
 
 // MARK: - Override Function
@@ -60,15 +59,6 @@ extension DoubleIconControl {
 extension DoubleIconControl {
     /// 界面布局
     fileprivate func initialUI() -> Void {
-        // 0. bg
-        self.addSubview(self.bgView)
-        self.bgView.set(cornerRadius: 0)
-        self.bgView.isHidden = true // 默认隐藏
-        self.bgView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-        self.layer.insertSublayer(self.gradientLayer, below: nil)
-        self.layer.isHidden = true  // 默认隐藏
         // 1. icon1
         self.addSubview(self.firstIconView)
         self.firstIconView.set(cornerRadius: 0)

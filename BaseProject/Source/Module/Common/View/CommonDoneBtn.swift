@@ -15,8 +15,6 @@ typealias AppDoneBtn = CommonDoneBtn
 /// 通用的确定按钮，注：需对gradientLayer指定大小
 class CommonDoneBtn: BaseButton {
 
-    /// 需给定大小
-    let gradientLayer: CAGradientLayer = AppUtil.commonGradientLayer()
 
     fileprivate let normalColors: [CGColor] = [UIColor.init(hex: 0x169CFF).cgColor, UIColor.init(hex: 0x6EEEFC).cgColor]
     fileprivate let disableColors: [CGColor] = [UIColor.init(hex: 0x35426A).cgColor, UIColor.init(hex: 0x35426A).cgColor]
@@ -33,7 +31,6 @@ class CommonDoneBtn: BaseButton {
     }
 
     fileprivate func commonInit() -> Void {
-        self.layer.insertSublayer(self.gradientLayer, below: nil)
         self.gradientLayer.colors = self.normalColors
     }
 

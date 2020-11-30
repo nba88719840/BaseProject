@@ -15,9 +15,6 @@ class IconContainer: UIView {
 
     let iconView: UIImageView = UIImageView.init()
 
-    let bgView: UIImageView = UIImageView.init()
-    let gradientLayer: CAGradientLayer = AppUtil.commonGradientLayer()
-
     // MARK: - Private Property
 
     // MARK: - Initialize Function
@@ -46,15 +43,6 @@ class IconContainer: UIView {
 extension IconContainer {
     /// 界面布局
     fileprivate func initialUI() -> Void {
-        // 0. bg
-        self.addSubview(self.bgView)
-        self.bgView.set(cornerRadius: 0)
-        self.bgView.isHidden = true // 默认隐藏
-        self.bgView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-        self.layer.insertSublayer(self.gradientLayer, below: nil)
-        self.layer.isHidden = true  // 默认隐藏
         // 1. icon
         self.addSubview(self.iconView)
         self.iconView.set(cornerRadius: 0)

@@ -12,7 +12,7 @@
 import UIKit
 
 /// 双Title的可点击Control，默认横向加载，使用时需自定义布局
-class DoubleTitleControl: UIControl {
+class DoubleTitleControl: BaseControl {
 
     // MARK: - Internal Property
 
@@ -21,9 +21,6 @@ class DoubleTitleControl: UIControl {
     let firstLabel: UILabel = UILabel()
     /// label2，横向就是右边的，竖向就是下面的
     let secondLabel: UILabel = UILabel()
-    
-    let bgView: UIImageView = UIImageView.init()
-    let gradientLayer: CAGradientLayer = AppUtil.commonGradientLayer()
 
     // MARK: - Private Property
 
@@ -42,6 +39,7 @@ class DoubleTitleControl: UIControl {
     fileprivate func commonInit() -> Void {
         self.initialUI()
     }
+
 }
 
 // MARK: - Internal Function
@@ -52,15 +50,6 @@ class DoubleTitleControl: UIControl {
 extension DoubleTitleControl {
     /// 界面布局
     fileprivate func initialUI() -> Void {
-        // 0. bg
-        self.addSubview(self.bgView)
-        self.bgView.set(cornerRadius: 0)
-        self.bgView.isHidden = true // 默认隐藏
-        self.bgView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-        self.layer.insertSublayer(self.gradientLayer, below: nil)
-        self.layer.isHidden = true  // 默认隐藏
         // 1. label1
         self.addSubview(self.firstLabel)
         self.firstLabel.set(text: nil, font: UIFont.systemFont(ofSize: 15), textColor: UIColor.lightGray)
