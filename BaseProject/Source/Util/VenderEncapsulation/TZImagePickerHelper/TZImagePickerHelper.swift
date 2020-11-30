@@ -42,6 +42,8 @@ class TZImagePickerHelper {
         let cropWH: CGFloat = 300
         imagePickerVC.cropRect = CGRect.init(x: (kScreenWidth - cropWH) * 0.5, y: (kScreenHeight - cropWH) * 0.5, width: cropWH, height: cropWH)
         imagePickerVC.notScaleImage = true
+        //
+        imagePickerVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         return imagePickerVC
     }
 
@@ -67,6 +69,8 @@ class TZImagePickerHelper {
         imagePickerVC.naviTitleColor = UIColor.white
         imagePickerVC.barItemTextColor = UIColor.white
         imagePickerVC.setNavBarTheme(titleFont: UIFont.pingFangSCFont(size: 18, weight: .medium), titleColor: UIColor.white, tintColor: UIColor.white, barTintColor: UIColor.init(hex: 0x2D385C), isTranslucent: false, bgImage: UIImage(), shadowColor: UIColor.init(hex: 0x202A46))
+        //
+        imagePickerVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         return imagePickerVC
     }
     /// 图片选择器 会裁剪
@@ -91,6 +95,8 @@ class TZImagePickerHelper {
         imagePickerVC.naviTitleColor = UIColor.white
         imagePickerVC.barItemTextColor = UIColor.white
         imagePickerVC.setNavBarTheme(titleFont: UIFont.pingFangSCFont(size: 18, weight: .medium), titleColor: UIColor.white, tintColor: UIColor.white, barTintColor: UIColor.init(hex: 0x2D385C), isTranslucent: false, bgImage: UIImage(), shadowColor: UIColor.init(hex: 0x202A46))
+        //
+        imagePickerVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         return imagePickerVC
     }
 
