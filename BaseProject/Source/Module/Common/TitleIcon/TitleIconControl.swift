@@ -18,10 +18,12 @@ class TitleIconControl: UIControl {
 
     // MARK: - Internal Property
 
-    //static var viewHeight: CGFloat = 44
     let titleLabel: UILabel = UILabel()
     let iconView: UIImageView = UIImageView()
-    let tagImgView: UIImageView = UIImageView()
+
+    let bgView: UIImageView = UIImageView.init()
+    let gradientLayer: CAGradientLayer = AppUtil.commonGradientLayer()
+
 
     // MARK: - Private Property
 
@@ -40,6 +42,7 @@ class TitleIconControl: UIControl {
     func commonInit() -> Void {
         self.initialUI()
     }
+
 }
 
 // MARK: - Internal Function
@@ -57,6 +60,15 @@ extension TitleIconControl {
 extension TitleIconControl {
     /// 界面布局
     fileprivate func initialUI() -> Void {
+        // 0. bg
+        self.addSubview(self.bgView)
+        self.bgView.set(cornerRadius: 0)
+        self.bgView.isHidden = true // 默认隐藏
+        self.bgView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
+        self.layer.insertSublayer(self.gradientLayer, below: nil)
+        self.layer.isHidden = true  // 默认隐藏
         // 1. titleLabel
         self.addSubview(self.titleLabel)
         self.titleLabel.set(text: nil, font: UIFont.systemFont(ofSize: 15), textColor: UIColor.lightGray)
@@ -71,16 +83,8 @@ extension TitleIconControl {
             make.centerY.equalToSuperview()
             make.trailing.equalToSuperview()
         }
-        // 2. tagView
-        self.addSubview(self.tagImgView)
-        self.tagImgView.isHidden = true
-        self.tagImgView.image = UIImage.init(named: "IMG_icon_official_max")
-        self.tagImgView.snp.makeConstraints { (make) in
-            make.right.equalTo(self.iconView.snp.right)
-            make.bottom.equalTo(self.iconView.snp.bottom)
-            make.size.equalTo(CGSize.init(width: 18, height: 18))
-        }
     }
+
 }
 
 // MARK: - Private  数据(处理 与 加载)

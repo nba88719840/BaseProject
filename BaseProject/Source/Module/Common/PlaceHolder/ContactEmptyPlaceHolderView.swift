@@ -22,7 +22,7 @@ class ContactEmptyPlaceHolderView: UIView {
     let mainView: UIView = UIView()
     let iconView: UIImageView = UIImageView()
     let titleLabel: UILabel = UILabel()
-    let doneBtn: GradientBackgroundButton = GradientBackgroundButton()
+    let doneBtn: GradientLayerButton = GradientLayerButton()
 
     /// 回调
     weak var delegate: ContactEmptyPlaceHolderViewProtocol?

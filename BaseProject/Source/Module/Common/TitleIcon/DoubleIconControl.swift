@@ -22,6 +22,9 @@ class DoubleIconControl: UIControl {
     /// icon2，横向就是右边的，竖向就是下面的
     let secondIconView: UIImageView = UIImageView()
 
+    let bgView: UIImageView = UIImageView.init()
+    let gradientLayer: CAGradientLayer = AppUtil.commonGradientLayer()
+
     // MARK: - Private Property
 
     // MARK: - Initialize Function
@@ -57,6 +60,15 @@ extension DoubleIconControl {
 extension DoubleIconControl {
     /// 界面布局
     fileprivate func initialUI() -> Void {
+        // 0. bg
+        self.addSubview(self.bgView)
+        self.bgView.set(cornerRadius: 0)
+        self.bgView.isHidden = true // 默认隐藏
+        self.bgView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
+        self.layer.insertSublayer(self.gradientLayer, below: nil)
+        self.layer.isHidden = true  // 默认隐藏
         // 1. icon1
         self.addSubview(self.firstIconView)
         self.firstIconView.set(cornerRadius: 0)
@@ -75,6 +87,7 @@ extension DoubleIconControl {
             make.bottom.lessThanOrEqualToSuperview().offset(-0)
         }
     }
+
 }
 
 // MARK: - Private  数据(处理 与 加载)

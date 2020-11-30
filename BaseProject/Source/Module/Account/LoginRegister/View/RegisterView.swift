@@ -241,7 +241,7 @@ extension RegisterView {
     }
 
     /// 注册按钮点击
-    @IBAction func registerBtnClick(_ sender: GradientBackgroundButton) {
+    @IBAction func registerBtnClick(_ sender: UIButton) {
         self.endEditing(true)
         guard let account = self.accountField.text, let smsCode = self.verifyCodeField.text, let password = self.passwordField.text, let confirmPwd = self.confirmPwdField.text else {
             return

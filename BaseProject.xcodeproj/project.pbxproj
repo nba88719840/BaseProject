@@ -10,6 +10,13 @@
 		5301C32C228AB8B000F47C36 /* BaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301C32B228AB8B000F47C36 /* BaseProjectTests.swift */; };
 		5301C337228AB8B000F47C36 /* BaseProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301C336228AB8B000F47C36 /* BaseProjectUITests.swift */; };
 		532AF0B12574C5BF001454A2 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AF0B02574C5BF001454A2 /* UIViewController+Extension.swift */; };
+		532AF0BA2574C7B3001454A2 /* TitleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AF0B92574C7B3001454A2 /* TitleButtonView.swift */; };
+		532AF0C22574C7C0001454A2 /* TitleValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AF0BE2574C7C0001454A2 /* TitleValueView.swift */; };
+		532AF0C32574C7C0001454A2 /* TitleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AF0BF2574C7C0001454A2 /* TitleContainer.swift */; };
+		532AF0C42574C7C0001454A2 /* TitleIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AF0C02574C7C0001454A2 /* TitleIconView.swift */; };
+		532AF0C52574C7C0001454A2 /* TitleValueControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AF0C12574C7C0001454A2 /* TitleValueControl.swift */; };
+		532AF0D02574C829001454A2 /* IconContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AF0CF2574C829001454A2 /* IconContainer.swift */; };
+		532AF0D52574CBF5001454A2 /* IconTitleValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AF0D42574CBF5001454A2 /* IconTitleValueView.swift */; };
 		5394398924F8A8980097DCAA /* ResourcePlaceAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5394398824F8A8980097DCAA /* ResourcePlaceAudio.swift */; };
 		5394398B24F8A8A50097DCAA /* ResourcePlacePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5394398A24F8A8A50097DCAA /* ResourcePlacePicture.swift */; };
 		53A6F30B24E0FA3300E8C9B4 /* CashPayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F13024E0FA2E00E8C9B4 /* CashPayManager.swift */; };
@@ -208,7 +215,6 @@
 		53A6F3D924E0FA3500E8C9B4 /* PublishImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F26F24E0FA3000E8C9B4 /* PublishImageModel.swift */; };
 		53A6F3DA24E0FA3500E8C9B4 /* DoubleIconControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F27124E0FA3000E8C9B4 /* DoubleIconControl.swift */; };
 		53A6F3DB24E0FA3500E8C9B4 /* DoubleTitleControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F27224E0FA3000E8C9B4 /* DoubleTitleControl.swift */; };
-		53A6F3DC24E0FA3500E8C9B4 /* GradientBackgroundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F27324E0FA3000E8C9B4 /* GradientBackgroundButton.swift */; };
 		53A6F3DD24E0FA3500E8C9B4 /* CommonSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F27424E0FA3000E8C9B4 /* CommonSearchView.swift */; };
 		53A6F3DE24E0FA3500E8C9B4 /* CommonSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F27524E0FA3000E8C9B4 /* CommonSwitchView.swift */; };
 		53A6F3DF24E0FA3500E8C9B4 /* CommonSmsCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F27624E0FA3000E8C9B4 /* CommonSmsCodeView.swift */; };
@@ -321,6 +327,13 @@
 		5301C336228AB8B000F47C36 /* BaseProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectUITests.swift; sourceTree = "<group>"; };
 		5301C338228AB8B000F47C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		532AF0B02574C5BF001454A2 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		532AF0B92574C7B3001454A2 /* TitleButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButtonView.swift; sourceTree = "<group>"; };
+		532AF0BE2574C7C0001454A2 /* TitleValueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleValueView.swift; sourceTree = "<group>"; };
+		532AF0BF2574C7C0001454A2 /* TitleContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleContainer.swift; sourceTree = "<group>"; };
+		532AF0C02574C7C0001454A2 /* TitleIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleIconView.swift; sourceTree = "<group>"; };
+		532AF0C12574C7C0001454A2 /* TitleValueControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleValueControl.swift; sourceTree = "<group>"; };
+		532AF0CF2574C829001454A2 /* IconContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconContainer.swift; sourceTree = "<group>"; };
+		532AF0D42574CBF5001454A2 /* IconTitleValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTitleValueView.swift; sourceTree = "<group>"; };
 		5336D29C23169EDA0090FEAF /* ASIHTTPRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ASIHTTPRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5336D29E23169EEC0090FEAF /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5336D2A023169F350090FEAF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -524,7 +537,6 @@
 		53A6F26F24E0FA3000E8C9B4 /* PublishImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishImageModel.swift; sourceTree = "<group>"; };
 		53A6F27124E0FA3000E8C9B4 /* DoubleIconControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleIconControl.swift; sourceTree = "<group>"; };
 		53A6F27224E0FA3000E8C9B4 /* DoubleTitleControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleTitleControl.swift; sourceTree = "<group>"; };
-		53A6F27324E0FA3000E8C9B4 /* GradientBackgroundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientBackgroundButton.swift; sourceTree = "<group>"; };
 		53A6F27424E0FA3000E8C9B4 /* CommonSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonSearchView.swift; sourceTree = "<group>"; };
 		53A6F27524E0FA3000E8C9B4 /* CommonSwitchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonSwitchView.swift; sourceTree = "<group>"; };
 		53A6F27624E0FA3000E8C9B4 /* CommonSmsCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonSmsCodeView.swift; sourceTree = "<group>"; };
@@ -695,6 +707,23 @@
 				5301C338228AB8B000F47C36 /* Info.plist */,
 			);
 			path = BaseProjectUITests;
+			sourceTree = "<group>";
+		};
+		532AF0B82574C736001454A2 /* TitleIcon */ = {
+			isa = PBXGroup;
+			children = (
+				532AF0C02574C7C0001454A2 /* TitleIconView.swift */,
+				53A6F27724E0FA3100E8C9B4 /* TitleIconControl.swift */,
+				532AF0BE2574C7C0001454A2 /* TitleValueView.swift */,
+				532AF0C12574C7C0001454A2 /* TitleValueControl.swift */,
+				532AF0BF2574C7C0001454A2 /* TitleContainer.swift */,
+				532AF0CF2574C829001454A2 /* IconContainer.swift */,
+				532AF0B92574C7B3001454A2 /* TitleButtonView.swift */,
+				53A6F27124E0FA3000E8C9B4 /* DoubleIconControl.swift */,
+				53A6F27224E0FA3000E8C9B4 /* DoubleTitleControl.swift */,
+				532AF0D42574CBF5001454A2 /* IconTitleValueView.swift */,
+			);
+			path = TitleIcon;
 			sourceTree = "<group>";
 		};
 		5394398C24F8B31C0097DCAA /* Pay */ = {
@@ -1646,6 +1675,7 @@
 		53A6F26124E0FA3000E8C9B4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				532AF0B82574C736001454A2 /* TitleIcon */,
 				53A6F20F24E0FA3000E8C9B4 /* CustomUI */,
 				53A6F21624E0FA3000E8C9B4 /* PopView */,
 				53A6F22C24E0FA3000E8C9B4 /* PlaceHolder */,
@@ -1711,13 +1741,9 @@
 				53A6F44524E11B6D00E8C9B4 /* AppHomeNavBar.swift */,
 				53A6F44624E11B6D00E8C9B4 /* AppHomeNavStatusView.swift */,
 				53A6F44724E11B6D00E8C9B4 /* AppNavBar.swift */,
-				53A6F27124E0FA3000E8C9B4 /* DoubleIconControl.swift */,
-				53A6F27224E0FA3000E8C9B4 /* DoubleTitleControl.swift */,
-				53A6F27324E0FA3000E8C9B4 /* GradientBackgroundButton.swift */,
 				53A6F27424E0FA3000E8C9B4 /* CommonSearchView.swift */,
 				53A6F27524E0FA3000E8C9B4 /* CommonSwitchView.swift */,
 				53A6F27624E0FA3000E8C9B4 /* CommonSmsCodeView.swift */,
-				53A6F27724E0FA3100E8C9B4 /* TitleIconControl.swift */,
 				53A6F27924E0FA3100E8C9B4 /* CommonDoneBtn.swift */,
 				53A6F27B24E0FA3100E8C9B4 /* XDDashLineView.swift */,
 				53A6F27C24E0FA3100E8C9B4 /* GradientLayerButton.swift */,
@@ -2296,6 +2322,7 @@
 				53A6F39724E0FA3400E8C9B4 /* RedDotBubbleView.swift in Sources */,
 				5394398B24F8A8A50097DCAA /* ResourcePlacePicture.swift in Sources */,
 				53A6F31A24E0FA3300E8C9B4 /* DataBaseManager.swift in Sources */,
+				532AF0C42574C7C0001454A2 /* TitleIconView.swift in Sources */,
 				53A6F3C724E0FA3400E8C9B4 /* MonkeyKingHelper.swift in Sources */,
 				53A6F3BB24E0FA3400E8C9B4 /* BaseNavigationController.swift in Sources */,
 				53A6F37924E0FA3400E8C9B4 /* MiningEnterGuideController.swift in Sources */,
@@ -2304,6 +2331,7 @@
 				53A6F39924E0FA3400E8C9B4 /* LoadingAnimationTestController.swift in Sources */,
 				53A6F32124E0FA3300E8C9B4 /* UIView+SnapKit+Extension.swift in Sources */,
 				53A6F44C24E11C0700E8C9B4 /* AppLoadingView.swift in Sources */,
+				532AF0D52574CBF5001454A2 /* IconTitleValueView.swift in Sources */,
 				53A6F3F124E0FA3500E8C9B4 /* SettingItemTipsCell.swift in Sources */,
 				53A6F39A24E0FA3400E8C9B4 /* TestHomeCell.swift in Sources */,
 				53A6F31424E0FA3300E8C9B4 /* RecommenderObject.swift in Sources */,
@@ -2333,6 +2361,7 @@
 				53A6F45824E11D0900E8C9B4 /* AppLimit.swift in Sources */,
 				53A6F33A24E0FA3300E8C9B4 /* AccountTokenModel.swift in Sources */,
 				53A6F3C924E0FA3400E8C9B4 /* UserPlaceController.swift in Sources */,
+				532AF0D02574C829001454A2 /* IconContainer.swift in Sources */,
 				53A6F3EA24E0FA3500E8C9B4 /* ReportViewController.swift in Sources */,
 				53A6F39324E0FA3400E8C9B4 /* UnreadBubbleView.swift in Sources */,
 				53A6F37524E0FA3400E8C9B4 /* ThirdChildConfig.swift in Sources */,
@@ -2389,9 +2418,9 @@
 				53A6F35624E0FA3300E8C9B4 /* XDNestScrollContainerView.swift in Sources */,
 				53A6F3DE24E0FA3500E8C9B4 /* CommonSwitchView.swift in Sources */,
 				53A6F40E24E0FA3500E8C9B4 /* CWAIMIndexBar.m in Sources */,
-				53A6F3DC24E0FA3500E8C9B4 /* GradientBackgroundButton.swift in Sources */,
 				53A6F3D424E0FA3400E8C9B4 /* SearchHistoryCell.swift in Sources */,
 				53A6F31024E0FA3300E8C9B4 /* UserUpChainObject.swift in Sources */,
+				532AF0C22574C7C0001454A2 /* TitleValueView.swift in Sources */,
 				53A6F3D624E0FA3400E8C9B4 /* SearchInputView.swift in Sources */,
 				53A6F33E24E0FA3300E8C9B4 /* AdvertNetworkManager.swift in Sources */,
 				53A6F31D24E0FA3300E8C9B4 /* AreaManager.swift in Sources */,
@@ -2430,6 +2459,7 @@
 				53A6F36124E0FA3300E8C9B4 /* XDGIFImage.swift in Sources */,
 				53A6F36024E0FA3300E8C9B4 /* XDGifImageView.swift in Sources */,
 				53A6F47F24E13DD600E8C9B4 /* LaunchAdvertController.swift in Sources */,
+				532AF0BA2574C7B3001454A2 /* TitleButtonView.swift in Sources */,
 				53A6F37724E0FA3400E8C9B4 /* LaunchController.swift in Sources */,
 				53A6F3E424E0FA3500E8C9B4 /* XDDashLineView.swift in Sources */,
 				53A6F3D724E0FA3400E8C9B4 /* PublishVideoModel.swift in Sources */,
@@ -2448,6 +2478,7 @@
 				53A6F32724E0FA3300E8C9B4 /* String+PinYin.swift in Sources */,
 				53A6F3B124E0FA3400E8C9B4 /* NetErrorPlaceHolderView.swift in Sources */,
 				53A6F30D24E0FA3300E8C9B4 /* AdvertSpaceObject.swift in Sources */,
+				532AF0C52574C7C0001454A2 /* TitleValueControl.swift in Sources */,
 				53A6F45524E11D0900E8C9B4 /* AppNotificationName.swift in Sources */,
 				53A6F36724E0FA3300E8C9B4 /* UploadManager.swift in Sources */,
 				53A6F35924E0FA3300E8C9B4 /* AlipayResultModel.swift in Sources */,
@@ -2535,6 +2566,7 @@
 				53A6F32624E0FA3300E8C9B4 /* String+URL.swift in Sources */,
 				53A6F33824E0FA3300E8C9B4 /* AccountLoginModel.swift in Sources */,
 				53A6F37224E0FA3400E8C9B4 /* ServerAddressConfig.swift in Sources */,
+				532AF0C32574C7C0001454A2 /* TitleContainer.swift in Sources */,
 				53A6F40824E0FA3500E8C9B4 /* MainTabBarController.swift in Sources */,
 				53A6F3DB24E0FA3500E8C9B4 /* DoubleTitleControl.swift in Sources */,
 				53A6F3B524E0FA3400E8C9B4 /* ContactEmptyPlaceHolderView.swift in Sources */,

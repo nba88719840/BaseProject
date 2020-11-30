@@ -29,7 +29,7 @@ class BasePopView: UIView {
     let mainView: UIView = UIView()
     let iconView: UIImageView = UIImageView()
     let titleLabel: UILabel = UILabel()
-    let doneBtn: GradientBackgroundButton = GradientBackgroundButton.init(type: .custom)
+    let doneBtn: GradientLayerButton = GradientLayerButton.init(type: .custom)
 
     var mainLrMargin: CGFloat = 45
 
