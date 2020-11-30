@@ -20,6 +20,10 @@ class FifthHomeController: BaseViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.default
+    }
+    
     /*
     // MARK: - Navigation
 

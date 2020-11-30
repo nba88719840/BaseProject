@@ -60,7 +60,8 @@ class RootViewController: BaseViewController {
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return UIStatusBarStyle.lightContent
+        return self.showRootVC.topVC.preferredStatusBarStyle
+        //return UIStatusBarStyle.lightContent
     }
 
     @objc fileprivate func run() -> Void {

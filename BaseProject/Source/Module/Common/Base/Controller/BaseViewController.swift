@@ -93,7 +93,10 @@ class BaseViewController: UIViewController {
         self.isAppearing = false
     }
 
-
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
+    
     /// 容器默认配置
     fileprivate func setupContentContainerAsDefault() -> Void {
         self.view.addSubview(self.content_Container)

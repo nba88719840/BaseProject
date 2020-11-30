@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5301C32C228AB8B000F47C36 /* BaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301C32B228AB8B000F47C36 /* BaseProjectTests.swift */; };
 		5301C337228AB8B000F47C36 /* BaseProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301C336228AB8B000F47C36 /* BaseProjectUITests.swift */; };
+		532AF0B12574C5BF001454A2 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AF0B02574C5BF001454A2 /* UIViewController+Extension.swift */; };
 		5394398924F8A8980097DCAA /* ResourcePlaceAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5394398824F8A8980097DCAA /* ResourcePlaceAudio.swift */; };
 		5394398B24F8A8A50097DCAA /* ResourcePlacePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5394398A24F8A8A50097DCAA /* ResourcePlacePicture.swift */; };
 		53A6F30B24E0FA3300E8C9B4 /* CashPayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F13024E0FA2E00E8C9B4 /* CashPayManager.swift */; };
@@ -319,6 +320,7 @@
 		5301C332228AB8B000F47C36 /* BaseProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5301C336228AB8B000F47C36 /* BaseProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectUITests.swift; sourceTree = "<group>"; };
 		5301C338228AB8B000F47C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		532AF0B02574C5BF001454A2 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		5336D29C23169EDA0090FEAF /* ASIHTTPRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ASIHTTPRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5336D29E23169EEC0090FEAF /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5336D2A023169F350090FEAF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -967,6 +969,7 @@
 				53A6F16624E0FA2E00E8C9B4 /* UIImage+Extension.swift */,
 				53A6F16724E0FA2E00E8C9B4 /* UIView+Corner.swift */,
 				53A6F16824E0FA2E00E8C9B4 /* PingFangSCFont.swift */,
+				532AF0B02574C5BF001454A2 /* UIViewController+Extension.swift */,
 			);
 			path = "UIKit+Extension";
 			sourceTree = "<group>";
@@ -2481,6 +2484,7 @@
 				53A6F3AF24E0FA3400E8C9B4 /* AdvertBannerItemView.swift in Sources */,
 				53A6F35A24E0FA3300E8C9B4 /* PayUtil.swift in Sources */,
 				53A6F38024E0FA3400E8C9B4 /* ImageCropTestController.swift in Sources */,
+				532AF0B12574C5BF001454A2 /* UIViewController+Extension.swift in Sources */,
 				53A6F3F324E0FA3500E8C9B4 /* RootViewController.swift in Sources */,
 				53A6F3EB24E0FA3500E8C9B4 /* ReportTargetModel.swift in Sources */,
 				5394398924F8A8980097DCAA /* ResourcePlaceAudio.swift in Sources */,
