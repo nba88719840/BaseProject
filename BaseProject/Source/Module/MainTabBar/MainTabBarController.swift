@@ -100,7 +100,7 @@ extension MainTabBarController {
     fileprivate func setupChildControllers() -> Void {
         // customTabbar
         let customTabbar: BaseTabBar = BaseTabBar()
-        customTabbar.barTintColor = UIColor.init(hex: 0x2D385C)
+        customTabbar.barTintColor = AppColor.tabBarTint
         self.setValue(customTabbar, forKey: "tabBar")
         // childs
         var childVCList: [UIViewController] = []

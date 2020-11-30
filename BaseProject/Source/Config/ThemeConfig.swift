@@ -74,17 +74,19 @@ class ThemeConfig {
     var inputPlaceColor: UIColor = UIColor.init(hex: 0x525C6E)
 
     /// 导航栏背景色
-    var navBgColor: UIColor = UIColor.init(hex: 0x2D385C)
+    var navBarTintColor: UIColor = UIColor.init(hex: 0x2D385C)
+    /// 导航栏主题色 - 左右按钮item颜色
+    var navTintColor: UIColor = UIColor.init(hex: 0xFFFFFF)
     /// 导航栏标题色
     var navTitleColor: UIColor = UIColor.init(hex: 0xFFFFFF)
-    /// 导航栏item颜色
-    var navItemColor: UIColor = UIColor.init(hex: 0xFFFFFF)
-
+    /// 导航栏阴影颜色
+    var navShadowColor: UIColor = UIColor.init(hex: 0x202A46)   // 0xE2E2E2
+    
     /// 标签栏背景色
-    var tabBgColor: UIColor = UIColor.init(hex: 0x2D385C)
+    var tabBarTintColor: UIColor = UIColor.init(hex: 0x2D385C)
     /// 标签栏未选中色
-    var tabUnSelectedColor: UIColor = UIColor.init(hex: 0x8C97AC)
+    var tabItemUnSelectedColor: UIColor = UIColor.init(hex: 0x8C97AC)
     /// 标签栏选中色
-    var tabSelectedColor: UIColor = UIColor.init(hex: 0x6EEEFC)
+    var tabItemSelectedColor: UIColor = UIColor.init(hex: 0x6EEEFC)
 
 }

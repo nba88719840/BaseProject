@@ -105,7 +105,7 @@ extension LaunchController {
             RootManager.share.type = .main
             //AppUtil.updateCurrentUserInfo()
         } else {
-            RootManager.share.type = .login
+            RootManager.share.type = .main   // .login
         }
     }
 

@@ -41,18 +41,22 @@ class AppColor {
     /// 输入框PlaceHolder文字颜色
     static let inputPlace: UIColor = AppConfig.share.theme.inputPlaceColor
 
+
     /// 导航栏背景色
-    static let navBg: UIColor = AppConfig.share.theme.navBgColor
+    static let navBarTint: UIColor = AppConfig.share.theme.navBarTintColor
+    /// 导航栏主题色 - 左右按钮item颜色
+    static let navTint: UIColor = AppConfig.share.theme.navTintColor
     /// 导航栏标题色
     static let navTitle: UIColor = AppConfig.share.theme.navTitleColor
-    /// 导航栏item颜色
-    static let navItem: UIColor = AppConfig.share.theme.navItemColor
+    /// 导航栏阴影颜色
+    static let navShadow: UIColor = AppConfig.share.theme.navShadowColor
+    
 
     /// 标签栏背景色
-    static let tabBg: UIColor = AppConfig.share.theme.tabBgColor
+    static let tabBarTint: UIColor = AppConfig.share.theme.tabBarTintColor
     /// 标签栏未选中色
-    static let tabUnSelected: UIColor = AppConfig.share.theme.tabUnSelectedColor
+    static let tabItemUnSelected: UIColor = AppConfig.share.theme.tabItemUnSelectedColor
     /// 标签栏选中色
-    static let tabSelected: UIColor = AppConfig.share.theme.tabSelectedColor
+    static let tabItemSelected: UIColor = AppConfig.share.theme.tabItemSelectedColor
 
 }
