@@ -1,17 +1,16 @@
 //
-//  UIImage+Extension.swift
+//  String+URL.swift
 //  BaseProject
 //
-//  Created by 小唐 on 2019/7/13.
+//  Created by 小唐 on 2019/7/8.
 //  Copyright © 2019 ChainOne. All rights reserved.
 //
-//  UIImage的扩展
+//  String相关扩展
 
 import Foundation
 import UIKit
 
-
-extension UIImage {
-
-
+extension String {
+    
+    
 }

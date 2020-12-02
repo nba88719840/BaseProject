@@ -24,4 +24,6 @@
 #import "CWAIMIndexBar.h"
 #import "AYBubbleView.h"
 
+#import <ChainOneKit/ChainOneKit-Swift.h>
+
 #endif /* iMeetPrefixHeader_pch */

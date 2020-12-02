@@ -47,14 +47,12 @@
 		53A6F32324E0FA3300E8C9B4 /* JPushHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F15B24E0FA2E00E8C9B4 /* JPushHelper.swift */; };
 		53A6F32424E0FA3300E8C9B4 /* UIImage+QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F15D24E0FA2E00E8C9B4 /* UIImage+QRCode.swift */; };
 		53A6F32524E0FA3300E8C9B4 /* String+QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F15E24E0FA2E00E8C9B4 /* String+QRCode.swift */; };
-		53A6F32624E0FA3300E8C9B4 /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F16024E0FA2E00E8C9B4 /* String+URL.swift */; };
-		53A6F32724E0FA3300E8C9B4 /* String+PinYin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F16124E0FA2E00E8C9B4 /* String+PinYin.swift */; };
-		53A6F32824E0FA3300E8C9B4 /* UITextField+LocalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F16324E0FA2E00E8C9B4 /* UITextField+LocalExtension.swift */; };
+		53A6F32624E0FA3300E8C9B4 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F16024E0FA2E00E8C9B4 /* String+Extension.swift */; };
+		53A6F32824E0FA3300E8C9B4 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F16324E0FA2E00E8C9B4 /* UITextField+Extension.swift */; };
 		53A6F32924E0FA3300E8C9B4 /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F16424E0FA2E00E8C9B4 /* NSAttributedString+Extension.swift */; };
 		53A6F32A24E0FA3300E8C9B4 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F16524E0FA2E00E8C9B4 /* UIFont+Extension.swift */; };
 		53A6F32B24E0FA3300E8C9B4 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F16624E0FA2E00E8C9B4 /* UIImage+Extension.swift */; };
 		53A6F32C24E0FA3300E8C9B4 /* UIView+Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F16724E0FA2E00E8C9B4 /* UIView+Corner.swift */; };
-		53A6F32D24E0FA3300E8C9B4 /* PingFangSCFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F16824E0FA2E00E8C9B4 /* PingFangSCFont.swift */; };
 		53A6F32E24E0FA3300E8C9B4 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F16A24E0FA2E00E8C9B4 /* CacheManager.swift */; };
 		53A6F32F24E0FA3300E8C9B4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F16D24E0FA2E00E8C9B4 /* LocationManager.swift */; };
 		53A6F33224E0FA3300E8C9B4 /* QRCodeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F17124E0FA2E00E8C9B4 /* QRCodeUtil.swift */; };
@@ -370,14 +368,12 @@
 		53A6F15B24E0FA2E00E8C9B4 /* JPushHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPushHelper.swift; sourceTree = "<group>"; };
 		53A6F15D24E0FA2E00E8C9B4 /* UIImage+QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+QRCode.swift"; sourceTree = "<group>"; };
 		53A6F15E24E0FA2E00E8C9B4 /* String+QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+QRCode.swift"; sourceTree = "<group>"; };
-		53A6F16024E0FA2E00E8C9B4 /* String+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
-		53A6F16124E0FA2E00E8C9B4 /* String+PinYin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+PinYin.swift"; sourceTree = "<group>"; };
-		53A6F16324E0FA2E00E8C9B4 /* UITextField+LocalExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+LocalExtension.swift"; sourceTree = "<group>"; };
+		53A6F16024E0FA2E00E8C9B4 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		53A6F16324E0FA2E00E8C9B4 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		53A6F16424E0FA2E00E8C9B4 /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
 		53A6F16524E0FA2E00E8C9B4 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		53A6F16624E0FA2E00E8C9B4 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		53A6F16724E0FA2E00E8C9B4 /* UIView+Corner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Corner.swift"; sourceTree = "<group>"; };
-		53A6F16824E0FA2E00E8C9B4 /* PingFangSCFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingFangSCFont.swift; sourceTree = "<group>"; };
 		53A6F16A24E0FA2E00E8C9B4 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		53A6F16D24E0FA2E00E8C9B4 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		53A6F17124E0FA2E00E8C9B4 /* QRCodeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeUtil.swift; sourceTree = "<group>"; };
@@ -986,8 +982,7 @@
 		53A6F15F24E0FA2E00E8C9B4 /* Foundation+Extension */ = {
 			isa = PBXGroup;
 			children = (
-				53A6F16024E0FA2E00E8C9B4 /* String+URL.swift */,
-				53A6F16124E0FA2E00E8C9B4 /* String+PinYin.swift */,
+				53A6F16024E0FA2E00E8C9B4 /* String+Extension.swift */,
 			);
 			path = "Foundation+Extension";
 			sourceTree = "<group>";
@@ -995,12 +990,11 @@
 		53A6F16224E0FA2E00E8C9B4 /* UIKit+Extension */ = {
 			isa = PBXGroup;
 			children = (
-				53A6F16324E0FA2E00E8C9B4 /* UITextField+LocalExtension.swift */,
+				53A6F16324E0FA2E00E8C9B4 /* UITextField+Extension.swift */,
 				53A6F16424E0FA2E00E8C9B4 /* NSAttributedString+Extension.swift */,
 				53A6F16524E0FA2E00E8C9B4 /* UIFont+Extension.swift */,
 				53A6F16624E0FA2E00E8C9B4 /* UIImage+Extension.swift */,
 				53A6F16724E0FA2E00E8C9B4 /* UIView+Corner.swift */,
-				53A6F16824E0FA2E00E8C9B4 /* PingFangSCFont.swift */,
 				532AF0B02574C5BF001454A2 /* UIViewController+Extension.swift */,
 			);
 			path = "UIKit+Extension";
@@ -2433,7 +2427,7 @@
 				53A6F37624E0FA3400E8C9B4 /* AppConfig.swift in Sources */,
 				53A6F37C24E0FA3400E8C9B4 /* MomentGuideController.swift in Sources */,
 				53A6F47824E12C3300E8C9B4 /* PageDefaultNetErrorView.swift in Sources */,
-				53A6F32824E0FA3300E8C9B4 /* UITextField+LocalExtension.swift in Sources */,
+				53A6F32824E0FA3300E8C9B4 /* UITextField+Extension.swift in Sources */,
 				53A6F35C24E0FA3300E8C9B4 /* PickerPopView.swift in Sources */,
 				53A6F3A624E0FA3400E8C9B4 /* AdvertHelper.swift in Sources */,
 				53A6F3E524E0FA3500E8C9B4 /* GradientLayerButton.swift in Sources */,
@@ -2478,7 +2472,6 @@
 				53A6F34824E0FA3300E8C9B4 /* UrlManager.swift in Sources */,
 				53A6F38724E0FA3400E8C9B4 /* TestPresentInteractiveController.swift in Sources */,
 				53A6F34324E0FA3300E8C9B4 /* UploadNetworkManager.swift in Sources */,
-				53A6F32724E0FA3300E8C9B4 /* String+PinYin.swift in Sources */,
 				53A6F3B124E0FA3400E8C9B4 /* NetErrorPlaceHolderView.swift in Sources */,
 				53A6F30D24E0FA3300E8C9B4 /* AdvertSpaceObject.swift in Sources */,
 				532AF0C52574C7C0001454A2 /* TitleValueControl.swift in Sources */,
@@ -2537,7 +2530,6 @@
 				53A6F30C24E0FA3300E8C9B4 /* CashPayInfoModel.swift in Sources */,
 				53A6F47624E12C3300E8C9B4 /* PageDefaultTobeOpenedView.swift in Sources */,
 				53A6F32524E0FA3300E8C9B4 /* String+QRCode.swift in Sources */,
-				53A6F32D24E0FA3300E8C9B4 /* PingFangSCFont.swift in Sources */,
 				53A6F3BC24E0FA3400E8C9B4 /* BaseTabBar.swift in Sources */,
 				53A6F32424E0FA3300E8C9B4 /* UIImage+QRCode.swift in Sources */,
 				53A6F3C624E0FA3400E8C9B4 /* ShareManager.swift in Sources */,
@@ -2567,7 +2559,7 @@
 				53A6F3F224E0FA3500E8C9B4 /* AppDelegate+WxApi.swift in Sources */,
 				53A6F3B324E0FA3400E8C9B4 /* ListEmptyPlaceHolderView.swift in Sources */,
 				53A6F32C24E0FA3300E8C9B4 /* UIView+Corner.swift in Sources */,
-				53A6F32624E0FA3300E8C9B4 /* String+URL.swift in Sources */,
+				53A6F32624E0FA3300E8C9B4 /* String+Extension.swift in Sources */,
 				53A6F33824E0FA3300E8C9B4 /* AccountLoginModel.swift in Sources */,
 				53A6F37224E0FA3400E8C9B4 /* ServerAddressConfig.swift in Sources */,
 				532AF0C32574C7C0001454A2 /* TitleContainer.swift in Sources */,
