@@ -14,7 +14,7 @@ protocol CommonSmsCodeViewProtocol: class {
     func codeView(_ codeView: CommonSmsCodeView, didClickedSend sendBtn: UIButton) -> Void
 }
 
-/// IMeet验证码控件 - 发送验证码、倒计时
+/// 验证码控件 - 发送验证码、倒计时
 typealias AppSmsCodeView = CommonSmsCodeView
 /// 验证码发送控件
 class CommonSmsCodeView: UIView {
