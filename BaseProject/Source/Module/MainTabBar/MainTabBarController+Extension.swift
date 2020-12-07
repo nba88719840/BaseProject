@@ -28,9 +28,11 @@ extension MainTabBarController {
     @objc func notificationProcess(_ notification: Notification) -> Void {
         switch notification.name {
         case NSNotification.Name.Advert.click:
-            break
+            self.advertClickNotificationProcess(notification)
         case NSNotification.Name.NetWork.reachabilityChanged:
-            break
+            self.reachabilityChangedNotificationProcess(notification)
+        case NSNotification.Name.Network.Illicit:
+            self.authenticationIllicitNotificationProcess(notification)
         default:
             break
         }
@@ -107,17 +109,17 @@ extension MainTabBarController {
 
     /// 广告点击
     @objc fileprivate func advertClickNotificationProcess(_ notification: Notification) -> Void {
-//        guard let model = notification.object as? AdvertModel else {
-//            return
-//        }
-//        switch model.linkType {
-//        case .outside:
-//            self.enterAdWebPage(link: model.link)
-//        case .inside:
-//            break
-//        default:
-//            break
-//        }
+        guard let model = notification.object as? AdvertModel else {
+            return
+        }
+        switch model.linkType {
+        case .outside:
+            self.enterAdWebPage(link: model.link)
+        case .inside:
+            break
+        default:
+            break
+        }
     }
 
     /// 用户点击(头像、用户信息)
