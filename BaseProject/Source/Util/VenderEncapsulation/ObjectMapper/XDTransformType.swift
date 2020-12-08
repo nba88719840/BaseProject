@@ -83,7 +83,7 @@ class CGSizeStringTransform: TransformType {
     }
 }
 
-/// 浮点数转换(CGSize String)  "123.00000000" 和 123.0
+/// 浮点数转换(Double String)  "123.00000000" 和 123.0
 class DoubleStringTransform: TransformType {
     static let `default`: DoubleStringTransform = DoubleStringTransform()
 
@@ -110,7 +110,7 @@ class DoubleStringTransform: TransformType {
 
 }
 
-/// Integer转换(CGSize String)
+/// Integer转换(Integer String)
 class IntegerStringTransform: TransformType {
     static let `default`: IntegerStringTransform = IntegerStringTransform()
 
