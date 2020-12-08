@@ -295,6 +295,15 @@ extension AppDelegate {
 // MARK: - justTest
 extension AppDelegate {
     fileprivate func justTest() -> Void {
+
+        //self.pinYinFirstLetterTest()
+
+        self.jsonNumTransformTest()
+        
+    }
+    
+    ///
+    fileprivate func pinYinFirstLetterTest() -> Void {
         var strTest: String = "哈哈哈哈"
         print(strTest + ": " + strTest.pinYinFirstLetter())
         strTest = "长江"
@@ -305,7 +314,31 @@ extension AppDelegate {
         print(strTest + ": " + strTest.pinYinFirstLetter())
         strTest = ""
         print(strTest + ": " + strTest.pinYinFirstLetter())
-
+    }
+    ///
+    fileprivate func jsonNumTransformTest() -> Void {
+        let strJson: String = "{\"num1\": 1, \"num2\": 3.25, \"num3\": \"123\", \"num4\": \"0.12345\"}"
+        let model = Mapper<NumModel>().map(JSONString: strJson)
+        print(model)
     }
 
+}
+
+class NumModel: Mappable {
+    
+    var num1: Int = 0
+    var num2: Double = 0
+    var num3: Int = 0
+    var num4: Double = 0
+    
+    required init?(map: Map) {
+        
+    }
+    func mapping(map: Map) {
+        num1 <- (map["num1"], IntegerStringTransform.default)
+        num2 <- (map["num2"], DoubleStringTransform.default)
+        num3 <- (map["num3"], IntegerStringTransform.default)
+        num4 <- (map["num4"], DoubleStringTransform.default)
+    }
+    
 }

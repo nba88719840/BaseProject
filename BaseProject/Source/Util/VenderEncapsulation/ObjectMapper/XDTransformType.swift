@@ -93,6 +93,10 @@ class DoubleStringTransform: TransformType {
     func transformFromJSON(_ value: Any?) -> Double? {
         if let value = value as? String {
             return Double(value)
+        } else if let value = value as? Double {
+            return value
+        } else if let value = value as? Int {
+            return Double(value)
         }
         return nil
     }
@@ -115,10 +119,17 @@ class IntegerStringTransform: TransformType {
 
     public init() {}
     func transformFromJSON(_ value: Any?) -> Int? {
-        guard let value = value as? String else {
+        guard let value = value else {
             return nil
         }
-        return Int(value)
+        if let value = value as? String {
+            return Int(value)
+        } else if let value = value as? Int {
+            return value
+        } else if let value = value as? Double {
+            return Int(value)
+        }
+        return nil
     }
 
     func transformToJSON(_ value: Int?) -> String? {
@@ -137,10 +148,17 @@ class Int32StringTransform: TransformType {
 
     public init() {}
     func transformFromJSON(_ value: Any?) -> Int32? {
-        guard let value = value as? String else {
+        guard let value = value else {
             return nil
         }
-        return Int32(value)
+        if let value = value as? String {
+            return Int32(value)
+        } else if let value = value as? Int {
+            return Int32(value)
+        } else if let value = value as? Double {
+            return Int32(value)
+        }
+        return nil
     }
 
     func transformToJSON(_ value: Int32?) -> String? {
