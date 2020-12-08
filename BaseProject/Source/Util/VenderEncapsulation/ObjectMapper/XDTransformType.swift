@@ -91,6 +91,9 @@ class DoubleStringTransform: TransformType {
     public typealias JSON = String
 
     func transformFromJSON(_ value: Any?) -> Double? {
+        guard let value = value else {
+            return nil
+        }
         if let value = value as? String {
             return Double(value)
         } else if let value = value as? Double {
