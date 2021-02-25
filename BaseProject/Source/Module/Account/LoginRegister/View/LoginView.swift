@@ -101,7 +101,7 @@ extension LoginView {
         }
         // 2. loginBtn
         mainView.addSubview(self.loginBtn)
-        self.loginBtn.gradientLayer.frame = CGRect.init(x: 0, y: 0, width: kScreenWidth - self.lrMargin * 2.0, height: self.doneBtnH)
+        self.loginBtn.co.gradientLayer.frame = CGRect.init(x: 0, y: 0, width: kScreenWidth - self.lrMargin * 2.0, height: self.doneBtnH)
         self.loginBtn.addTarget(self, action: #selector(loginBtnClick(_:)), for: .touchUpInside)
         self.loginBtn.set(title: "donebtn.login".localized, titleColor: UIColor.white, for: .normal)
         self.loginBtn.set(title: "donebtn.login".localized, titleColor: UIColor.init(hex: 0x8C97AC), for: .disabled)

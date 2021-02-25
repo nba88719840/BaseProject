@@ -8,18 +8,10 @@
 
 import UIKit
 
-class BaseControl: UIControl {
+class BaseControl: UIControl, ChainOneView {
 
-    let bgView: UIImageView = UIImageView.init()
-    let gradientLayer: CAGradientLayer = AppUtil.commonGradientLayer()
-    let bottomLine: UIView = UIView.init()
-    
-    var showBottomLine: Bool = false {
-        didSet {
-            self.bottomLine.isHidden = !showBottomLine
-            self.bringSubviewToFront(self.bottomLine)
-        }
-    }
+    let co: ChainOneViewItemContainer = ChainOneViewItemContainer.init()
+
     
     // MARK: - Lifecycle
     override init(frame: CGRect) {
@@ -35,28 +27,12 @@ class BaseControl: UIControl {
     override func layoutSubviews() {
         super.layoutSubviews()
         //self.gradientLayer.bounds = self.bounds
+        self.co.gradientLayer.bounds = self.bounds
     }
 
     // MARK: - Custom User Interface
     func initialize() {
-        // 1. bgView
-        self.addSubview(self.bgView)
-        self.bgView.set(cornerRadius: 0)
-        self.bgView.isHidden = true // 默认隐藏
-        self.bgView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-        // 2. gradientLayer
-        self.layer.insertSublayer(self.gradientLayer, below: nil)
-        //self.gradientLayer.isHidden = true  // 默认无大小，自动隐藏不显示
-        // 3. bottomLine
-        self.addSubview(self.bottomLine)
-        self.bottomLine.backgroundColor = AppColor.dividing
-        self.bottomLine.isHidden = true // 默认隐藏
-        self.bottomLine.snp.makeConstraints { (make) in
-            make.leading.trailing.bottom.equalToSuperview()
-            make.height.equalTo(0.5)
-        }
+        self.coInitial()
     }
 
 }

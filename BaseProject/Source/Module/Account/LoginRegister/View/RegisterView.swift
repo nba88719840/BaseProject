@@ -163,7 +163,7 @@ extension RegisterView {
         self.confirmPwdCorrectBtn.isHidden = true   // 默认隐藏
         // registerBtn
         self.registerBtn.backgroundColor = UIColor.clear
-        self.registerBtn.gradientLayer.frame = CGRect.init(x: 0, y: 0, width: kScreenWidth - self.registerBtnLrMargin * 2.0, height: self.registerBtnH)
+        self.registerBtn.co.gradientLayer.frame = CGRect.init(x: 0, y: 0, width: kScreenWidth - self.registerBtnLrMargin * 2.0, height: self.registerBtnH)
         self.registerBtn.set(cornerRadius: 5)
         self.registerBtn.set(title: "donebtn.register".localized, titleColor: UIColor.white, for: .normal)
         self.registerBtn.set(title: "donebtn.register".localized, titleColor: UIColor.init(hex: 0x8C97AC), for: .disabled)

@@ -20,6 +20,7 @@
 		532AF0DD2574D07F001454A2 /* IconTitleValueControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AF0DC2574D07F001454A2 /* IconTitleValueControl.swift */; };
 		5394398924F8A8980097DCAA /* ResourcePlaceAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5394398824F8A8980097DCAA /* ResourcePlaceAudio.swift */; };
 		5394398B24F8A8A50097DCAA /* ResourcePlacePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5394398A24F8A8A50097DCAA /* ResourcePlacePicture.swift */; };
+		53A2A46725870761009E7BF4 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2A46625870761009E7BF4 /* AppLanguage.swift */; };
 		53A6F30B24E0FA3300E8C9B4 /* CashPayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F13024E0FA2E00E8C9B4 /* CashPayManager.swift */; };
 		53A6F30C24E0FA3300E8C9B4 /* CashPayInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F13124E0FA2E00E8C9B4 /* CashPayInfoModel.swift */; };
 		53A6F30D24E0FA3300E8C9B4 /* AdvertSpaceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F13624E0FA2E00E8C9B4 /* AdvertSpaceObject.swift */; };
@@ -296,6 +297,7 @@
 		53A6F47B24E12C3300E8C9B4 /* PageDefaultServerErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F47424E12C3300E8C9B4 /* PageDefaultServerErrorView.swift */; };
 		53A6F47C24E12C3300E8C9B4 /* PageDefaultLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F47524E12C3300E8C9B4 /* PageDefaultLoadingView.swift */; };
 		53A6F47F24E13DD600E8C9B4 /* LaunchAdvertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6F47E24E13DD600E8C9B4 /* LaunchAdvertController.swift */; };
+		53AF01DA25E74195006065F3 /* ChainOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AF01D925E74195006065F3 /* ChainOneView.swift */; };
 		80415AF170E6DD9BF779339C /* Pods_BaseProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8AF51F8A8AB3C2F736EE31 /* Pods_BaseProjectTests.framework */; };
 		F4C0B58CEDC938B08D96BE5D /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AE7EA3B9CD7E7B2D15332F /* Pods_BaseProject.framework */; };
 /* End PBXBuildFile section */
@@ -341,6 +343,7 @@
 		5336D2A42316A2C60090FEAF /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5394398824F8A8980097DCAA /* ResourcePlaceAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcePlaceAudio.swift; sourceTree = "<group>"; };
 		5394398A24F8A8A50097DCAA /* ResourcePlacePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcePlacePicture.swift; sourceTree = "<group>"; };
+		53A2A46625870761009E7BF4 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
 		53A6F13024E0FA2E00E8C9B4 /* CashPayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashPayManager.swift; sourceTree = "<group>"; };
 		53A6F13124E0FA2E00E8C9B4 /* CashPayInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashPayInfoModel.swift; sourceTree = "<group>"; };
 		53A6F13624E0FA2E00E8C9B4 /* AdvertSpaceObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertSpaceObject.swift; sourceTree = "<group>"; };
@@ -633,6 +636,7 @@
 		53A6F47424E12C3300E8C9B4 /* PageDefaultServerErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDefaultServerErrorView.swift; sourceTree = "<group>"; };
 		53A6F47524E12C3300E8C9B4 /* PageDefaultLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDefaultLoadingView.swift; sourceTree = "<group>"; };
 		53A6F47E24E13DD600E8C9B4 /* LaunchAdvertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAdvertController.swift; sourceTree = "<group>"; };
+		53AF01D925E74195006065F3 /* ChainOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOneView.swift; sourceTree = "<group>"; };
 		A2DA6A2F9880EC5EB1E9F487 /* Pods-BaseProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProjectTests/Pods-BaseProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		AB0876529D328C59EC81062A /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C580D8D219973DE74CB00D94 /* Pods-BaseProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProjectTests/Pods-BaseProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1035,6 +1039,7 @@
 				53A6F44F24E11D0900E8C9B4 /* AppNotificationName.swift */,
 				53A6F44324E117CA00E8C9B4 /* AppUtil.swift */,
 				53A6F17124E0FA2E00E8C9B4 /* QRCodeUtil.swift */,
+				53A2A46625870761009E7BF4 /* AppLanguage.swift */,
 			);
 			path = AppUtil;
 			sourceTree = "<group>";
@@ -1608,14 +1613,15 @@
 			children = (
 				53A6F23B24E0FA3000E8C9B4 /* BaseTabBar.swift */,
 				53A6F23C24E0FA3000E8C9B4 /* BaseCollectionView.swift */,
-				53A6F23D24E0FA3000E8C9B4 /* BaseTextView.swift */,
 				53A6F23E24E0FA3000E8C9B4 /* BaseTableViewCell.swift */,
-				53A6F23F24E0FA3000E8C9B4 /* BaseLabel.swift */,
 				53A6F24124E0FA3000E8C9B4 /* BaseTableView.swift */,
+				53A6F23D24E0FA3000E8C9B4 /* BaseTextView.swift */,
+				53A6F23F24E0FA3000E8C9B4 /* BaseLabel.swift */,
 				53A6F24224E0FA3000E8C9B4 /* BaseTextField.swift */,
 				53A6F24024E0FA3000E8C9B4 /* BaseControl.swift */,
 				53A6F24324E0FA3000E8C9B4 /* BaseView.swift */,
 				53A6F24424E0FA3000E8C9B4 /* BaseButton.swift */,
+				53AF01D925E74195006065F3 /* ChainOneView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2301,6 +2307,7 @@
 			files = (
 				53A6F38B24E0FA3400E8C9B4 /* TestPushController.swift in Sources */,
 				53A6F40024E0FA3500E8C9B4 /* LoginRegisterSwitchView.swift in Sources */,
+				53A2A46725870761009E7BF4 /* AppLanguage.swift in Sources */,
 				53A6F3A524E0FA3400E8C9B4 /* RegisterPopView.swift in Sources */,
 				53A6F44424E117CA00E8C9B4 /* AppUtil.swift in Sources */,
 				53A6F3CE24E0FA3400E8C9B4 /* CommonUserDetailModel.swift in Sources */,
@@ -2422,6 +2429,7 @@
 				53A6F33E24E0FA3300E8C9B4 /* AdvertNetworkManager.swift in Sources */,
 				53A6F31D24E0FA3300E8C9B4 /* AreaManager.swift in Sources */,
 				53A6F3A124E0FA3400E8C9B4 /* PopViewUtil.swift in Sources */,
+				53AF01DA25E74195006065F3 /* ChainOneView.swift in Sources */,
 				53A6F3D824E0FA3400E8C9B4 /* FileUploadModel.swift in Sources */,
 				53A6F35E24E0FA3300E8C9B4 /* CommonAlertUtil.swift in Sources */,
 				53A6F37624E0FA3400E8C9B4 /* AppConfig.swift in Sources */,

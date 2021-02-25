@@ -31,20 +31,20 @@ class CommonDoneBtn: BaseButton {
     }
 
     fileprivate func commonInit() -> Void {
-        self.gradientLayer.colors = self.normalColors
+        self.co.gradientLayer.colors = self.normalColors
     }
 
     override var isEnabled: Bool {
         didSet {
             super.isEnabled = isEnabled
-            self.gradientLayer.colors = isEnabled ? self.normalColors : self.disableColors
+            self.co.gradientLayer.colors = isEnabled ? self.normalColors : self.disableColors
         }
     }
 
     override var isHighlighted: Bool {
         didSet {
             super.isHighlighted = isHighlighted
-            self.gradientLayer.colors = isHighlighted ? self.highlightedColors : self.normalColors
+            self.co.gradientLayer.colors = isHighlighted ? self.highlightedColors : self.normalColors
         }
     }
 
